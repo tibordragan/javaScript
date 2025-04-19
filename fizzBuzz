@@ -1,0 +1,19 @@
+let output = [];
+
+function FizzBuzz () {
+    for(let pushNumber = 1; pushNumber <101; pushNumber++){
+    if(pushNumber % 3 === 0 && pushNumber % 5 === 0){
+        output.push("FizzBuzz");
+        
+    }else if(pushNumber % 3 === 0){
+        output.push("Fizz");
+        
+    }else if(pushNumber % 5 === 0){
+        output.push("Buzz");
+    }else{
+    output.push(pushNumber);
+    }
+    }
+  
+    console.log(output);
+}
